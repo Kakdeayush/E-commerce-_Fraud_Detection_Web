@@ -1,112 +1,154 @@
-🛒 E-Commerce Fraud Detection Web App
+# 🛒 E-Commerce Fraud Detection System
 
-A machine learning–powered web application that predicts whether an e-commerce transaction is fraudulent or legitimate using a stacked ensemble model. The system provides a simple web interface built with Flask for real-time prediction.
+A machine learning–powered web application that detects fraudulent e-commerce transactions in real time using an ensemble stacking model. The system integrates machine learning with a Flask web interface to provide fast and accurate fraud predictions.
 
-🚀 Features
+---
 
-Real-time fraud prediction via web interface
+## 📌 Project Description
 
-Ensemble ML model (stacking approach)
+Online financial transactions are increasingly vulnerable to fraud.  
+This project applies machine learning techniques to analyze transaction features and classify them as:
 
-Upload transaction data for prediction
+✔ Legitimate Transaction  
+✘ Fraudulent Transaction  
 
-Accuracy evaluation included
+The trained model is deployed in a web application that allows users to input or upload transaction data and receive instant predictions.
 
-Lightweight Flask backend
+---
 
-🧠 Machine Learning Approach
+## ✨ Features
 
-The system uses an ensemble learning strategy combining multiple classifiers:
+- Real-time fraud prediction
+- Machine learning stacking ensemble model
+- Web interface using Flask
+- CSV upload support for batch prediction
+- Model accuracy evaluation included
+- Simple and lightweight architecture
 
-Decision Tree
+---
 
-Random Forest
+## 🧠 Machine Learning Model
 
-Logistic Regression
+The system uses an ensemble learning approach combining multiple classifiers:
 
-XGBoost
+- Decision Tree Classifier  
+- Random Forest Classifier  
+- Logistic Regression  
+- XGBoost  
+- Stacking Classifier (Final Prediction Layer)
 
-Stacking Classifier (final predictor)
+Pre-trained models are stored and loaded during runtime.
 
-The trained models are stored and loaded for prediction at runtime.
+---
 
-🖥️ How the Web App Works
+## 🖥️ Application Workflow
 
-User inputs transaction details or uploads data
+User Input / CSV Upload  
+⬇  
+Feature Processing  
+⬇  
+Machine Learning Model  
+⬇  
+Fraud Prediction Result  
 
-Flask backend processes the features
+---
 
-Trained ML model predicts fraud probability
+## 📁 Project Structure
 
-Result displayed on webpage
-
-📁 Project Structure
+```
 E-COMMERCE FRAUD/
 │
-├── model/                 # Additional model-related files (if any)
-├── static/                # CSS, JS, images
-├── templates/             # HTML pages for web interface
-├── test_data/             # Sample test datasets
+├── model/                 # Model-related supporting files
+├── static/                # CSS, JavaScript, images
+├── templates/             # HTML templates for UI
+├── test_data/             # Sample datasets for testing
 │
 ├── app.py                 # Main Flask application
-├── fraud_stack.pkl        # Stacking model file
-├── fraud_xg.pkl           # XGBoost model file
+├── fraud_stack.pkl        # Stacking ML model
+├── fraud_xg.pkl           # XGBoost model
 ├── upload.csv             # Sample input dataset
 ├── Accuracy.txt           # Model accuracy results
 ├── requirements.txt       # Python dependencies
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
-2️⃣ Install required libraries
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+cd YOUR-REPOSITORY-NAME
+```
+
+### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-3️⃣ Run the application
+```
+
+### 3️⃣ Run the application
+```bash
 python app.py
-4️⃣ Open in browser
+```
+
+### 4️⃣ Open in browser
+```
 http://127.0.0.1:5000
-📊 Model Performance
+```
 
-Model evaluation results are stored in:
+---
 
+## 📊 Model Performance
+
+Model evaluation metrics are available in:
+
+```
 Accuracy.txt
+```
 
-This file contains performance metrics from training and testing.
+This file contains training and testing accuracy results.
 
-📦 Requirements
+---
 
-Python 3.x
+## 📦 Requirements
 
-Flask
+- Python 3.x
+- Flask
+- scikit-learn
+- xgboost
+- numpy
+- pandas
 
-scikit-learn
+Install all dependencies using:
 
-xgboost
-
-numpy
-
-pandas
-
-Install automatically using:
-
+```bash
 pip install -r requirements.txt
-🎯 Project Purpose
+```
 
-This project demonstrates:
+---
 
-Application of machine learning in fraud detection
+## 🎯 Use Cases
 
-Integration of ML model with web application
+- Academic machine learning project
+- Fraud detection prototype system
+- ML + Web application integration
+- Financial transaction risk prediction
 
-Real-time prediction system
+---
 
-End-to-end ML deployment workflow
+## ⚠️ Disclaimer
 
-Designed as an academic major project and prototype system.
+This project is developed for educational and demonstration purposes only.  
+It is not intended for real-world financial deployment.
 
-⚠️ Disclaimer
+---
 
-This project is for educational purposes only and not intended for real financial production environments.
+## 👨‍💻 Author
 
-👨‍💻 Author
+Developed as an E-Commerce Fraud Detection Major Project.
 
-Developed as an E-Commerce Fraud Detection major project.
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star ⭐
