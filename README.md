@@ -14,6 +14,20 @@ This project applies machine learning techniques to analyze transaction features
 
 The trained model is deployed in a web application that allows users to input or upload transaction data and receive instant predictions.
 
+## 🖼️ Application UI Preview
+
+<p align="center">
+  <img src="images/Screenshot 2026-03-08 124212.png" width="800">
+</p>
+
+<p align="center">
+  <img src="images/Screenshot 2026-03-08 124608.png" width="800">
+</p>
+
+<p align="center">
+  <img src="images/Screenshot 2026-03-08 124743.png" width="800">
+</p>
+
 ---
 
 ## ✨ Features
